@@ -39,7 +39,13 @@ Este projeto permite que você interaja com a API Gemini diretamente pelo termin
 
 4. **Configure o banco de dados:**
 
-   Certifique-se de ter um PostgreSQL rodando localmente com um banco chamado `gemini_db` e usuário/senha `postgres`.
+   Crie o banco de dados com o comando:
+   
+   ```bash
+   psql -h localhost -U postgres -p 5432 -c "CREATE DATABASE gemini_db;"
+   ```
+
+   O usuário e senha padrão são `postgres`, mas você pode ajustar esses dados no arquivo `lib/app.rb` conforme necessário.
 
 5. **Execute o script:**
 
